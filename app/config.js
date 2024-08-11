@@ -3,6 +3,5 @@ dotenv.config();
 
 
 module.exports = {
-    urlDb : process.env.URL_MONGODB_DEV,
-    
+    urlDb : process.env.URL_MONGODB_DEV,    
 }

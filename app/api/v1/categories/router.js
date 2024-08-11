@@ -1,12 +1,11 @@
 const express =  require('express');
 const router  = express();
+const {create,index,find , update} = require('./controller'); 
 
 
-router.get('/category',(red,res)=>{
-    console.log('asdasdasd')
-    res.status(200).json({
-        message: 'List of Categories'
-    })
-})
+router.post('/categories',create)
+router.get('/categories',index)
+router.get('/categories/:categoriesId',find)
+router.put('/categories/:categoriesId',update)
 
 module.exports = router;

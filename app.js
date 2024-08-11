@@ -17,15 +17,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   res.status(200).json({
-    message: "asdasdas",
+    message: "Hio",
   });
 });
 
-app.get('/asdas', (req, res) => {
-  res.status(200).json({
-    message: "aa",
-  });
-});
+// app.get('/asdas', (req, res) => {
+//   res.status(200).json({
+//     message: "aa",
+//   });
+// });
 
 app.use(v1, category);
 
